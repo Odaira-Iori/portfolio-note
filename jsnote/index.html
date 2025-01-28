@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS note</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/hamburger.css">
+    <script src="../pf.js"></script>
+</head>
+<body>
+
+    <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav zen-kurenaido-regular">
+            <div class="nav-menu">
+                <div class="dropdown"><div class="dropdown__btn"><a href="../index.html" class="h-top">TOP</a></div></div>
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular" id="dropdown__btn">WEBクリエイター能力認定試験</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-1.html" class="dropdown__item-link">2-1  HTMLの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-2.html" class="dropdown__item-link">2-2 HTML5の特徴</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-4.html" class="dropdown__item-link">2-4 基本ページのHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-5.html" class="dropdown__item-link">2-5 body内に各ページ共通のHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-6.html" class="dropdown__item-link">2-6 ナビゲーション領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-7.html" class="dropdown__item-link">2-7 パンくずリストを作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-8.html" class="dropdown__item-link">2-8 コンテンツ領域・メイン領域・サブ領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-9.html" class="dropdown__item-link">2-9 フッター領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson3/3-1.html" class="dropdown__item-link">3-1 CSSの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson3/3-5.html" class="dropdown__item-link">3-5 背景色、テキスト色を指定する</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webデザイン基礎</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../web-design/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webマーケティング</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../web-marketing/chapter6.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">JavaScript</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="#" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <h1>JS note</h1>
+
+    <div id="contents">
+        <div id="main">
+
+            <h2>基本構文</h2>
+
+            <h3>変数宣言</h3>
+
+            <p class="ex">
+                let message = "こんにちは、JavaScript!";<br>
+                console.log(message);
+            </p>
+
+            <ol>
+                <li class="nam">変数</li>
+                <ul>
+                    <li>
+                        <dt>let</dt>
+                        <dd><span class="b">再代入可能</span>な変数を宣言する  現在最も一般的に使用されている</dd>
+                    </li>
+                    <li>
+                        <dt>const</dt>
+                        <dd>値を入力すると<span class="b">変更できない</span>確定数を宣言する</dd>
+                    </li>
+                    <li>
+                        <dt>var</dt>
+                        <dd>古い書き込みで再挿入可能だが、スコープの扱いが特殊なので現在はあまり推奨されない</dd>
+                    </li>
+                </ul>
+
+                <li class="nam">コードの動作</li>
+                <ul>
+                    <li>
+                        <dt>let message = "こんにちは、JavaScript!";</dt>
+                        <dd>変数messageに文字列"こんにちは、JavaScript!"を入力</dd>
+                    </li>
+                    <li>
+                        <dt>console.log(message);</dt>
+                        <dd>コンソールにmessageの内容を表示</dd>
+                    </li>
+                </ul>
+
+                <li class="nam">結果</li>
+                <ul>
+                    <li>デベロッパーツールを開き、Consoleタブを見ると「こんにちは、JavaScript!」と表示される</li>
+                </ul>
+            </ol>
+
+
+            <h3>条件分岐（if文）</h3>
+            <p class="ex">
+                let age = 20;<br>
+                if (age >= 18) {<br>
+                    console.log("成人です");<br>
+                } else {<br>
+                    console.log("未成年です");<br>
+                }
+            </p>
+
+            <ol>
+                <li class="nam">条件分岐の基本構文</li>
+                <p class="exs">
+                    if (条件) {<br>
+                        <span class="comment">// 条件がtrueの場合に実行される処理</span><br>
+                    } else {<br>
+                        <span class="comment">// 条件がfalseの場合に実行される処理</span><br>
+                    }
+                </p>
+
+                <li class="nam">コードの動作</li>
+                <ul>
+                    <li>
+                        <dt>let age = 20;</dt>
+                        <dd>年齢を表す変数ageを20に設定</dd>
+                    </li>
+                    <li>
+                        <dt>if (age >= 18)</dt>
+                        <dd>条件age >= 18（年齢が18歳以上）という条件を設定</dd>
+                    </li>
+                    <li>
+                        条件がtrueの場合、console.log("成人です");が実行される
+                    </li>
+                    <li>
+                        条件がfalseの場合、else内がconsole.log("未成年です");実行される
+                    </li>
+                </ul>
+
+                <li class="nam">結果</li>
+                <ul>
+                    <li>
+                        ageが20なので「成人です」と表示される
+                    </li>
+                </ul>
+            </ol>
+
+
+            <h3>ループ</h3>
+            <p class="ex">
+                for (let i = 1; i <= 5; i++) {<br>
+                    console.log("カウント: " + i);<br>
+                }
+            </p>
+
+            <ol>
+                <li class="nam">forループの基本構文</li>
+                <p class="exs">
+                    for (初期化; 条件; 更新) {<br>
+                        <span class="comment">// 繰り返す処理</span><br>
+                    }<br>
+                </p>
+                
+                <ul>
+                    <li>
+                        <dt>初期化</dt>
+                        <dd>ループ用の変数を宣言（例: let i = 1）</dd>
+                    </li>
+                    <li>
+                        <dt>条件</dt>
+                        <dd>ループを続ける条件を書く（例: i <= 5）</dd>
+                    </li>
+                    <li>
+                        <dt>更新</dt>
+                        <dd> ループのたびに変数を更新（例: i++）</dd>
+                    </li>
+                </ul>
+
+                <li class="nam">コードの動作</li>
+                <ul>
+                    <li>
+                        <dt>for (let i = 1; i <= 5; i++)</dt>
+                        <dd>1から5まで、1ずつ増やしながらループを実行</dd>
+                    </li>
+                    <li>
+                        ループ内でconsole.log("カウント: " + i);を実行
+                    </li>
+                </ul>
+
+                <li class="nam">結果</li>
+                <ul>
+                    <li>
+                        <dt>
+                            コンソールに次のように表示される
+                        </dt>
+                        <dd>
+                            <p class="exs">
+                                カウント: 1<br>
+                                カウント: 2<br>
+                                カウント: 3<br>
+                                カウント: 4<br>
+                                カウント: 5
+                            </p>
+                        </dd>
+                    </li>
+                </ul>
+            </ol>
+
+
+            <h3>関数</h3>
+            <p class="ex">
+                function greet(name) {<br>
+                    return "こんにちは、" + name + "!";<br>
+                }<br>
+                console.log(greet("田中"));
+            </p>
+            
+            <ol>
+                <li class="nam">関数の基本構文</li>
+                <p class="exs">
+                    function 関数名(引数) {<br>
+                        <span class="comment">// 実行する処理</span><br>
+                        return 戻り値;<br>
+                    }
+                </p>
+                <ul>
+                    <li>
+                        <dt>function greet(name)</dt>
+                        <dd>greetという関数を定義し、というname引数を受け取る</dd>
+                    </li>
+                    <li>
+                        <dt>return "こんにちは、" + name + "!";</dt>
+                        <dd>引数nameを使い、「こんにちは、[名前]!」という文字列を戻り値として返す</dd>
+                    </li>
+                    <li>
+                        <dt>console.log(greet("田中"))</dt>
+                        <dd>関数greetを呼び出し、引数に"田中"渡します。その結果をコンソールに表示</dd>
+                    </li>
+                </ul>
+
+                <li class="nam"></li>
+
+                <li class="nam"></li>
+            </ol>
+        </div>
+
+        <div id="sub">
+            
+        </div>
+    </div>
+    
+</body>
+</html>

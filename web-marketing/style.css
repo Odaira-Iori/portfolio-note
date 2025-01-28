@@ -1,0 +1,53 @@
+h1 {
+    border-bottom: 2.5px solid #2c2cd8;
+}
+
+h2 {
+    border-bottom: 1.5px solid #a6a6da;
+}
+
+h3 {
+    border-bottom: 1px solid #bcbce1;
+}
+
+dt {
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+.a {
+    color: #6767eb;
+    background-color: #f4ffcd;
+
+}
+
+.b {
+    color: #f3ae5a;
+}
+
+.c {
+    color: #f47e98;
+}
+
+
+#contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main {
+    width: 75%;
+    margin-right: 40px;
+}
+
+#sub {
+    width: 25%;
+    font-size: 80%;
+}
+
+#sub dd {
+    margin-left: 10px;
+}

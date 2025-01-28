@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/hamburger.css">
+    <script src="../../pf.js"></script>
+</head>
+
+<body>
+            
+    <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav zen-kurenaido-regular">
+            <div class="nav-menu">
+                <div class="dropdown"><div class="dropdown__btn"><a href="../../index.html" class="h-top">TOP</a></div></div>
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular" id="dropdown__btn">WEBクリエイター能力認定試験</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../lesson2/2-1.html" class="dropdown__item-link">2-1  HTMLの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="../lesson2/2-2.html" class="dropdown__item-link">2-2 HTML5の特徴</a></li>
+                            <li class="dropdown__item"><a href="../lesson2/../lesson2/2-4.html" class="dropdown__item-link">2-4 基本ページのHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="../lesson2/2-5.html" class="dropdown__item-link">2-5 body内に各ページ共通のHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="../lesson2/2-6.html" class="dropdown__item-link">2-6 ナビゲーション領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../lesson2/2-7.html" class="dropdown__item-link">2-7 パンくずリストを作成する</a></li>
+                            <li class="dropdown__item"><a href="../lesson2/2-8.html" class="dropdown__item-link">2-8 コンテンツ領域・メイン領域・サブ領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../lesson2/2-9.html" class="dropdown__item-link">2-9 フッター領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__item-link">3-1 CSSの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="3-5.html" class="dropdown__item-link">3-5 背景色、テキスト色を指定する</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webデザイン基礎</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../web-design/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webマーケティング</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../web-marketing/chapter6.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">JavaScript</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../jsnote/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <h1>3-1</h1>
+
+    <h2>☆ CSSの基礎知識</h2>
+
+    <h3>CSSはHTMLの表示を制御するための言語</h3>
+    <p>
+        CSS（Cascading Style Sheets）<br>
+        HTMLにスタイル機能を提供し、表示を制御して見た目を整形するための言語<br>
+        フォントを変える、複雑なレイアウトを組むetc
+    </p>
+
+    
+    <h3>CSSの基本的な仕組み</h3>
+    <p>
+        関連するHTMLドキュメントの中から要素を選択し、その選択した要素に適したスタイルを適用して表示を変更する<br>
+        例）<br>
+            見出しのテキスト{
+                            箇条書き;
+                            箇条書き;
+
+            }
+    </p>
+
+
+    <h3>CSSの基本的な書式と各部の名称</h3>
+    <p>
+        例）<br>
+        h1{
+            background-color:#FFFAFO;
+            color:#FFF;
+        }
+    </p>
+    
+    <dl>
+        <dt>ルール（ルールセット）</dt>
+        <dd>
+            セレクターと宣言ブロックがセットになったもの（つまり全体）<br>
+            CSSのルールはアルファベット、：、；、スペースなどの記号も含めて全て半角で記述する
+        </dd><br>
+
+        <dt>セレクター</dt>
+        <dd>
+            HTMLドキュメントから特定の要素を選択する部分<br>
+            「パターン」と呼ばれる、要素を選択する条件が定義されている<br>
+            例）h1
+        </dd><br>
+
+        <dt>宣言ブロック</dt>
+        <dd>
+            開始波カッコ（{）から終了波カッコ（}）までの部分<br>
+            この中にセレクターで選択した要素に適用するスタイルを記述する<br>
+            例）{
+                background-color:#FFFAFO;
+                color:#FFF;
+                }
+        </dd><br>
+
+        <dt>プロパティ</dt>
+        <dd>
+            CSSで操作できるスタイルそれぞれに「プロパティ」が定義されている（「フォントを指定する」「テキスト色を変更する」）<br>
+            例）color
+        </dd><br>
+
+        <dt>プロパティ値</dt>
+        <dd>
+            プロパティに設定する値<br>
+            色のプロパティであれば、値に色を設定する<br>
+            プロパティとプロパティ値の間にはコロン（:）が必ず入る<br>
+            プロパティ値の後ろには必ずセミコロン(;)が付く<br>
+            例）#FFF
+        </dd><br>
+
+        <dt>宣言（スタイル宣言）</dt>
+        <dd>
+            プロパティとその値をまとめた呼称<br>
+            必ずプロパティとプロパティ値はセットで記述する<br>
+            例）background-color:#FFFAFO;
+        </dd>
+    </dl>
+
+    <h3>コメント文</h3>
+    <p>/**これがCSSのコメント/</p>
+
+    <h3>@ルール</h3>
+    <p>CSSにはセレクターのない「@ルール」というものがある</p>
+    <dl>
+        <dt>@charsetルール</dt>
+        <dd>
+            CSSの文字コードを指定する<br>
+            原則UTF‐8 <br>
+            例）@charset "UTF-8";
+        </dd><br>
+
+        <dt>@importルール</dt>
+        <dd>
+            CSSファイルから別のCSSファイルを読み込むことができる<br>
+            例）@import 読み込むCSSファイルへのパス
+        </dd><br>
+        
+        <dt>@mediaルール</dt>
+        <dd>
+            特定の条件を満たすときだけ適用されるCSSルールを作成することができる<br>
+            例）@media(max-width: 500px){
+                ここにCSSルールを記述
+            }
+        </dd>
+    </dl>
+
+</body>
+</html>

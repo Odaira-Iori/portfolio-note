@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-7</title>
+    <link rel="stylesheet" href="css/c2-7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/hamburger.css">
+    <script src="../../pf.js"></script>
+</head>
+
+<body>
+            
+    <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav zen-kurenaido-regular">
+            <div class="nav-menu">
+                <div class="dropdown"><div class="dropdown__btn"><a href="../../index.html" class="h-top">TOP</a></div></div>
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular" id="dropdown__btn">WEBクリエイター能力認定試験</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="2-1.html" class="dropdown__item-link">2-1  HTMLの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="2-2.html" class="dropdown__item-link">2-2 HTML5の特徴</a></li>
+                            <li class="dropdown__item"><a href="2-4.html" class="dropdown__item-link">2-4 基本ページのHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="2-5.html" class="dropdown__item-link">2-5 body内に各ページ共通のHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="2-6.html" class="dropdown__item-link">2-6 ナビゲーション領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__item-link">2-7 パンくずリストを作成する</a></li>
+                            <li class="dropdown__item"><a href="2-8.html" class="dropdown__item-link">2-8 コンテンツ領域・メイン領域・サブ領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="2-9.html" class="dropdown__item-link">2-9 フッター領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../lesson3/3-1.html" class="dropdown__item-link">3-1 CSSの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="../lesson3/3-5.html" class="dropdown__item-link">3-5 背景色、テキスト色を指定する</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webデザイン基礎</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../web-design/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webマーケティング</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../web-marketing/chapter6.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">JavaScript</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../jsnote/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <h1>2-7</h1>
+
+    <h2>☆ パンくずリストを作成する</h2>
+
+    <h3>パンくずリストとはなんぞや</h3>
+    <p>
+        ページがサイト内のどこに位置するのか、トップページからの階層構造をたどってリスト化したリンクの一覧<br>
+        例）top>menu>からあげ <br>
+            ↑こんなやつ（時と場合によって間の記号は変わるよ）
+    </p>
+
+
+    <h3>spanタグ</h3>
+    <p>
+        div同様、特に意味を持たず、テキストをグループ化する<br>
+        このタグで囲まれたテキストだけ色を変えるなど、CSSを適用するために用いられる<br>
+        例）
+        <p>世界に<span>一つだけ</span>のオリジナルスイーツをおつくりいたします。</p>
+    </p>
+
+</body>
+</html>

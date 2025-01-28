@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/hamburger.css">
+    <script src="../../pf.js"></script>
+</head>
+
+<body>
+        
+    <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav zen-kurenaido-regular">
+            <div class="nav-menu">
+                <div class="dropdown"><div class="dropdown__btn"><a href="../../index.html" class="h-top">TOP</a></div></div>
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular" id="dropdown__btn">WEBクリエイター能力認定試験</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="#" class="dropdown__item-link">2-1  HTMLの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="2-2.html" class="dropdown__item-link">2-2 HTML5の特徴</a></li>
+                            <li class="dropdown__item"><a href="2-4.html" class="dropdown__item-link">2-4 基本ページのHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="2-5.html" class="dropdown__item-link">2-5 body内に各ページ共通のHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="2-6.html" class="dropdown__item-link">2-6 ナビゲーション領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="2-7.html" class="dropdown__item-link">2-7 パンくずリストを作成する</a></li>
+                            <li class="dropdown__item"><a href="2-8.html" class="dropdown__item-link">2-8 コンテンツ領域・メイン領域・サブ領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="2-9.html" class="dropdown__item-link">2-9 フッター領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../lesson3/3-1.html" class="dropdown__item-link">3-1 CSSの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="../lesson3/3-5.html" class="dropdown__item-link">3-5 背景色、テキスト色を指定する</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webデザイン基礎</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../web-design/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webマーケティング</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../web-marketing/chapter6.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">JavaScript</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../../jsnote/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <h1>2-1</h1>
+
+    <h2>☆ HTMLの基礎知識</h2>
+    <h3>○ HTMLはコンテンツを構造化するための言語</h3>
+
+    <h4>最も基本的なHTMLの例↓</h4>
+    <p>こんにちは</p>
+    <br>
+
+
+    <h3>○ 基本的なHTMLタグの書式と名称</h3>
+    <!--<a>=リンクを意味するタグ-->
+
+    <h4>例</h4>
+    <a href="news.html">お知らせ</a>
+
+    <h4>属性と属性値の記述の仕方</h4>
+    <a href="main.html" class="cls1"></a>
+
+    <dl>
+        <dt>タグ</dt>
+            <dd>必ず ＜（小なり）で始まり、＞（大なり）で終わる<br>
+                HTMLタグは各種記号、アルファベット、スペースを全て半角で記述する
+            </dd><br>
+
+        <dt>開始タグ</dt>
+            <dd>タグ名と複数の属性が含まれることがある<br>
+                半角スペースで区切る<br>
+                例)＜a href="news.html"＞
+            </dd><br>
+
+        <dt>終了タグ</dt>
+            <dd>
+                「＜」に／（スラッシュ）が続き、「＞」で終わる<br>
+                属性は含まれない<br>
+                例）＜/a＞
+            </dd><br>
+
+        <dt>タグ名</dt>
+            <dd>
+                タグの意味を表す<br>
+                例）a <br>
+                    ↑この場合はアンカーリンクを意味する<br>
+                    ※アンカーリンク…WEBページを閲覧しているとき、クリックするとページ内の指定の場所へ移動できるリンクのことです。ページ内リンクとも呼ばれます。
+            </dd><br>
+
+        <dt>属性</dt>
+            <dd>
+                タグに付加的な情報を提供する<br>
+                例）＜a＞タグには「href属性」が必須
+            </dd><br>
+
+        <dt>属性値</dt>
+            <dd>
+                属性に設定する値<br>
+                原則として属性に続いて「＝」を書き属性値を記述、属性値は「”」で囲む<br>
+                例）＜a＞タグには「href属性」の属性値にはリンク先のページのURLを指定する
+            </dd><br>
+
+        <dt>要素の内容（コンテンツ）</dt>
+            <dd>
+                開始タグと終了たぐで囲まれた部分<br>
+                テキストや、他のタグが含まれることも<br>
+                例）お知らせ
+            </dd><br>
+
+        <dt>要素</dt>
+            <dd>
+                全てまとめて「要素」<br>
+                タグといったら、＜a＞タグそのものを指す<br>
+                「a要素」といったら、要素の内容を含んだ、開始タグから終了タグの全体と考える
+            </dd><br>
+    </dl>
+
+
+    <h3>空要素</h3>
+    <p>
+        終了タグが無いタグのこと<br>
+        例） <img src="photo.png" alt="画像の説明">
+    </p>
+
+
+    <h3>コメント文</h3>
+    <!--これがこめ-->
+
+
+    <h3>タグの親子関係</h3>
+    <p>
+        あるタグの要素の内容に別のタグが含まれることがあり、要素と要素の間で階層関係が作られること<br>
+        ネスト、入れ子　とも
+    </p>
+    <p>
+        ・親要素・子要素・兄弟要素<br>
+        親要素…上の階層の要素<br>
+        子要素…下の階層の要素<br>
+        それよりさらに上下すると、祖先要素、孫要素となる<br>
+        兄弟要素…同じ改装にある要素<br>
+        例）
+        <div>祖先
+            <ul>親
+                <li>子・兄弟
+                    <p>孫</p>
+                </li>
+                <li>子・兄弟
+                    <p>孫</p>
+                </li>
+            </ul>
+        </div>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/hamburger.css">
+    <script src="../pf.js"></script>
+</head>
+<body>
+
+    <div id="nav-wrapper" class="nav-wrapper">
+        <div class="hamburger" id="js-hamburger">
+            <span class="hamburger__line hamburger__line--1"></span>
+            <span class="hamburger__line hamburger__line--2"></span>
+            <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <nav class="sp-nav">
+            <div class="nav-menu">
+                <div class="dropdown"><div class="dropdown__btn"><a href="../index.html" class="h-top">TOP</a></div></div>
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular" id="dropdown__btn">WEBクリエイター能力認定試験</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-1.html" class="dropdown__item-link">2-1  HTMLの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-2.html" class="dropdown__item-link">2-2 HTML5の特徴</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-4.html" class="dropdown__item-link">2-4 基本ページのHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-5.html" class="dropdown__item-link">2-5 body内に各ページ共通のHTMLを記述する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-6.html" class="dropdown__item-link">2-6 ナビゲーション領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-7.html" class="dropdown__item-link">2-7 パンくずリストを作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-8.html" class="dropdown__item-link">2-8 コンテンツ領域・メイン領域・サブ領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson2/2-9.html" class="dropdown__item-link">2-9 フッター領域を作成する</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson3/3-1.html" class="dropdown__item-link">3-1 CSSの基礎知識</a></li>
+                            <li class="dropdown__item"><a href="../sikaku/lesson3/3-5.html" class="dropdown__item-link">3-5 背景色、テキスト色を指定する</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webデザイン基礎</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="#" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">Webマーケティング</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../web-marketing/chapter6.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="dropdown">
+                    <button class="dropdown__btn zen-kurenaido-regular">JavaScript</button>
+                    <div class="dropdown__body">
+                        <ul class="dropdown__list ">
+                            <li class="dropdown__item"><a href="../jsnote/index.html" class="dropdown__item-link">note No.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <div id="main">
+        <h1>24.11.05</h1>
+        <dl>
+            <dt>UI</dt>
+            <dd>
+                主観、誰が見ても変わらない事実
+            </dd><br>
+
+            <dt>UX</dt>
+            <dd>
+                人によって感じ方が変わる
+            </dd><br>
+        </dl>
+
+        <h2>webとアプリの</h2>
+        <dl>
+            <dt>共通点</dt>
+            <dd>
+                どちらもサービスを利用するためのもの
+            </dd>
+
+            <dt>違う点</dt>
+            <dd>
+                アプリ：専用アプリケーション<br>
+                webブラウザ：汎用アプリケーション
+            </dd>
+        </dl>
+
+
+        <h3>webサイトの特徴</h3>
+        <p>URLと不可分に結びついているので「戻る」「進む」の制御が派生</p>
+
+        <dl>
+            <dt>メリット</dt>
+            <dd>
+                ・マルチデバイスの展開のしやすさ<br>
+                ・OSの違いによる環境の差異が小さい<br>
+                ・複数のブラウザを同時に使用できる<br>
+                ・サービスごとのインストールが不要
+            </dd>
+
+            <dt>デメリット</dt>
+            <dd>
+                ・操作上のインタラクションが乏しい　例）Excel<br>
+                ・ジェスチャーへの対応が乏しい<br>
+                ・操作スピードが遅い
+            </dd>
+        </dl>
+
+        <h3>アプリの特徴</h3>
+        <p>ハードウェア的に異なるため、インターフェースの差異が大きい</p>
+
+        <dl>
+            <dt>メリット</dt>
+            <dd>
+                ・動作が速く、操作が軽快<br>
+                ・タッチパネルでは多様なジェスチャーに対応できる<br>
+                ・データ通信量が（同一条件のwebサイトと比較して）少量で済む<br>
+                ・中断や再開が容易
+            </dd>
+
+            <dt>デメリット</dt>
+            <dd>
+                ・サービスごとに都度インストールが必要<br>
+                ・OSごとに異なるプログラミング言語で開発する必要がある<br>
+                ・最適なインターフェースがデバイスやOSごとに異なる
+            </dd>
+        </dl>
+
+
+        <h2>テキスト・画像・動画</h2>
+        <dl>
+            <dt>テキスト</dt>
+            <dd>
+                データの基本にして、最強のデータ形式<br>
+                デバイス、解像度問わず、OSによる最適な表示が担保されている
+            </dd>
+
+            <dt>画像</dt>
+            <dd>
+                テキストと並んで重要なデータ形式<br>
+                どのような場合であっても環境によらず全く同一に見えることが特徴<br>
+                ベクターデータ（SVG、PDF など）は解像度の影響を受けない
+            </dd>
+
+            <dt>動画</dt>
+            <dd>
+                画面が大きいデバイスほどよく視聴される傾向が強い<br>
+                ほとんどの動画は「16:9」のアスペクト比で固定されているので自由度に制限がある
+            </dd>
+        </dl>
+
+
+        <h2>パフォーマンス</h2>
+        <p>
+            表示と操作に関わる「速さ（スピード）」のこと<br>
+            表示の速度が遅くなるほど、ユーザーが必要なコンテンツを見つけられる可能性が下がる
+        </p>
+        <br><br><br><br><br><br>
+
+
+
+
+
+
+        <h1>24.11.12</h1>
+
+        <h2>インタラクションコスト</h2>
+        <dl>
+            <dd>
+                頭への負担：<span class="a">最適度以上</span>脳を働かせる　エネルギー消費<br>
+                →読む、理解する、覚える
+            </dd><br>
+            <dd>
+                体への負担：<span class="a">最適度以上</span>体を動かせる<br>
+                →クリック/タップする、スクロールする、スワイプする
+            </dd>
+        </dl>
+        <p>
+            ユーザビリティの良し悪しを測る指標<br>
+            インタラクションコスト↓、デザイン↑
+        </p><br>
+
+
+        <h2>一貫性</h2>
+        <p>サービス内にはある<span class="a">ルールに沿ってデザインされている</span>こと</p>
+        
+        <h3>メリット</h3>
+        <ul>
+            <li>予測できる</li>
+            <li>機能の追加や改善が簡単になる</li>
+            <li>信頼性が生まれる</li>
+        </ul>
+        <p>↓</p>
+        <p><span class="a">頭への負担が減少</span></p>
+
+
+        <h2>シンプルさ</h2>
+        <p>単純にするではなく、<span class="a">「明快」にする</span>こと</p>
+        <p>明快：<span class="a">わかりやすくて、すっきりした気分になる（p79）</span></p>
+        <dl>
+            <dt>難点</dt>
+            <dd><span class="b">要素が少ないが、目的をちゃんと理解でき、正しく操作できる</span></dd><br>
+
+            <span class="b"><dt>注意点</dt>
+            <dd>初心者→シンプル、プロ→複雑</dd></span>
+        </dl>
+
+
+        <h2>共通概念</h2>
+        <p><span class="a">世の中</span>に、<span class="a">広い範囲で使われているルール</span>のこと<br>
+        →新たな学習コストを減らす（p82、83）</p>
+
+        <dl>
+            <dt>メリット</dt>
+            <dd><span class="a">脳の負担を低減する<br>
+            サービス本来の目的にユーザーが集中できるようにする</span><br>
+            例）<span class="c">ユニバーサルデザイン</span>（p83、84、85）</dd>
+        </dl>
+        <br><br><br><br><br><br>
+
+
+
+
+
+
+        <h1>24.12.03</h1>
+
+        <dl>
+            <dt>ナビゲーション</dt>
+            <dd>
+                ユーザーが機能や情報を見つけるのを手助けして、望ましい行動をとってもらうための<span class="a">インターフェースの集合体</span>
+            </dd><br>
+
+            <dt>インタラクション</dt>
+            <dd>
+                ユーザーの動きに対する<span class="a">動きや変化を伴ったフィードバック</span>
+            </dd><br>
+        </dl>
+
+        <h2>ナビゲーション</h2>
+
+        <dl>
+            <dt>ナビゲーションの配置とパターン</dt>
+            <dd>
+                ナビゲーションを配置する場所は<span class="d">上下左右のいずれか</span>が基本
+            </dd>
+            <dd>
+                ヘッダー、フッターパンくずリスト、グローバルナビゲーション、ローカルナビゲーション、関連ナビゲーション、オーバーレイ、インレイなどがよく登場する
+            </dd><br>
+
+            <dt>コンテンツの量</dt>
+            <dd>
+                コンテンツの量が増えれば、設置するナビゲーションの巣類も増える
+            </dd><br>
+
+            <dt>画面エリアの自由度</dt>
+            <dd>画面エリアの「大きさ」と「固定が可能なのか」によって最適なナビゲーションが異なる</dd><br>
+
+            <dt>入力手段の違い</dt>
+            <dd>
+                細かいパーツで構成されているナビゲーションの操作は、マウスでは問題なくてもタッチ操作やリモコン操作においては不適切になり、<span class="d">よりおおまかで手数の少ないもの</span>が必要になる
+            </dd><br>
+        </dl>
+
+        <h2>インタラクション</h2>
+
+        <p>
+            インタラクションはその目的とするところから大きく、<span class="a">理解のためのインタラクション</span>と<span class="a">演出のためのインタラクション</span>の大きく2種類に分類される
+        </p>
+        
+        <dl>
+            <dt>理解のためのインタラクション</dt>
+            <dd>
+                より明確な<span class="a">理解を促すための動き</span>
+            </dd>
+            <dd>
+                使いやすさと分かりやすさに直結するインタラクション
+            </dd><br>
+
+            <dt>演出のためのインタラクション</dt>
+            <dd>
+                素敵な体験を介してサービスの<span class="a">見地区を向上させる動き</span>
+            </dd>
+            <dd>
+                ブランドの認知を訴求するために効果的なインタラクション
+            </dd><br>
+
+            <dt>マイクロインタラクション</dt>
+            <dd>
+                製品やサービスにおける最小単位のインタラクション
+            </dd><br>
+        </dl>
+        <br><br><br><br><br><br>
+
+
+
+
+
+
+        <h1>24.01.21</h1>
+        <h2>デザインガイドライン</h2>
+
+        <h3>デザインガイドラインの目的</h3>
+        <p>
+            <span class="a">色・文字・レイアウト・表現方法</span>といった様々なデザイン要素について、ルールを厳密に定義したドキュメント
+        </p>
+
+        <dl>
+            <dt>Apple：ヒューマンインターフェースガイドライン（Human Interface Guidelines）</dt>
+            <dd>IOS7以降のAppleのフラットデザインに基づいたデザイン指針をまとめたもの</dd>
+            <dd><span class="b">デバイス固有の特徴を活かすためのコンセプト</span>として存在している</dd><br>
+
+            <dt>Google：マテリアルデザイン（Material Design）</dt>
+            <dd>Googleによるミニマルデザインのガイドライン</dd>
+            <dd>インタラクションによる説明が多用されているため、視覚的に理解しやすい構造になっている</dd><br>
+
+            <dt>Microsoft：マイクロソフトデザイン（Microsoft Design）</dt>
+            <dd>Microsoftが公式で提唱しているデザインガイドライン</dd>
+            <dd><span class="b">Natural on each device（どのデバイスでも自然に）、Intuitive and powerful（直観的で力強く）、Engaging and immersive（魅力的で没入できる）</span>というテーマのもと、ARやウェアラブルを含めた世界観を表現するデザイン体系を目指している</dd>
+        </dl>
+
+        <h3>デザインガイドラインの作成</h3>
+        <p>実際のプロジェクトにあたって、デザイナーがサービスデザインに携わる重要な役割の一つが、単にデザインをするだけでなく<span class="a">デザインを通してインターフェースデザインのルールを作り、継続的に運用しやすいサービスに仕上げる</span>こと</p>
+    </div>
+
+    <div id="sub">
+        <dl>
+            <dt>インタラクション</dt>
+            <dd>動きのこと</dd>
+            <dd>視覚的に情報を提供できる</dd>
+
+            <dt>ウェアラブルコンピュータ</dt>
+            <dd>装着もしくは着用できるコンピュータ（アップルウォッチなど）</dd>
+
+            <dt>インターフェース</dt>
+            <dd>コンピュータで、異なる機器・装置の間アを接続して、交信や制御を可能にする装置やソフトウェア</dd>
+        </dl>
+    </div>
+
+</body>
+</html>
