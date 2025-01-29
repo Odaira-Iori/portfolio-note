@@ -191,6 +191,11 @@ doropdown
 .h-top {
     color: #636175;
     text-decoration: none;
-    padding-right: 200px;
+    padding-right: 90%;
 }
 
+/*@media(max-width:400px){
+    .h-top {
+        padding-right: 70px;
+    }
+}*/
